@@ -71,3 +71,19 @@ services:
     image: redis:latest
     ports:
       - "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
+#   portainer:
+#     image: portainer/portainer-ce:latest
+#     container_name: ${COMPOSE_PROJECT_NAME}-portainer
+#     restart: always
+#     ports:
+#       - "8000:8000"
+#       - "9443:9443"
+#     volumes:
+#       - portainer_data:/data portainer/portainer-ce:latest
+#       - /var/run/docker.sock:/var/run/docker.sock
+# volumes:
+#   # portainer_data:
+#   #   external: true
+
+
+
